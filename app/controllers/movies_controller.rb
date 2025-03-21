@@ -38,7 +38,7 @@ class MoviesController < ApplicationController
 
     if @the_movie.valid?
       @the_movie.save
-      redirect_to("/movies", { notice: "Movie created successfully." })
+      redirect_to("/movies", { notice: "Movie was successfully created." })
     else
       render template: "movies/new"
     end
